@@ -1,0 +1,3 @@
+export CUDA_VISIBLE_DEVICES="0"
+python run_classifier.py --alpha 0 --warmup_proportion 0.05 --attn_layer_num 3 --pooling_type 1 --num_train_epochs 30  --seed 2022 --learning_rate 1e-5 --data_dir ./datasets/sarcasm --image_dir ../dataset_image/ --output_dir ./output/bert_vit_nocontrast/  --do_train --do_test --model_select VitBERT 1>exp/bert_vit_nocontrast.txt 2>exp/bert_vit_err_nocontrast.txt
+python run_classifier.py --gamma 0 --lambda1 0 --warmup_proportion 0.05 --attn_layer_num 3 --pooling_type 1 --num_train_epochs 30  --seed 2022 --learning_rate 1e-5 --data_dir ./datasets/sarcasm --image_dir ../dataset_image/ --output_dir ./output/bert_vit_nosentic/  --do_train --do_test --model_select VitBERT 1>exp/bert_vit_nosentic.txt 2>exp/bert_vit_err_nosentic.txt
