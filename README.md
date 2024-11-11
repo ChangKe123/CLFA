@@ -1,2 +1,2 @@
 # CLFA
-We will upload it soon.
+Run `train_s.sh`.
